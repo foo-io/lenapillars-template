@@ -1,0 +1,135 @@
+// logo
+.--svg-logo-white {
+  fill: #fff;
+  transition: fill .2s ease-out;
+}
+
+.app-header {
+  padding: 20px 0;
+  background: url(/assets/images/slider-main/image-1.png);
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__section {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    display: flex;
+
+    &-link {
+      display: flex;
+
+      &:hover {
+        .--svg-logo-white {
+          fill: #EDDBB5;
+        }
+      }
+    }
+  }
+  &__information {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__panel {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 38px;
+
+    &-item {
+      display: flex;
+    }
+  }
+  &__messages {
+    display: flex;
+
+    &:hover {
+      .--svg-logo-white {
+        fill: #EDDBB5;
+      }
+    }
+  }
+  &__search {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      .--svg-logo-white {
+        fill: #EDDBB5;
+      }
+    }
+  }
+  &__language {
+    display: flex;
+    font-family: 'Museo Cyrl 500', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    transition: color .2s ease-out;
+    &:hover {
+      color: #EDDBB5;
+    }
+  }
+  &__navigation {
+    margin-top: 20px;
+  }
+}
+
+.app-weather {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    display: flex;
+    margin-right: 7px;
+  }
+  &__temperature {
+    font-family: 'Museo Cyrl 500', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+  }
+}
+
+.app-navigation {
+  display: flex;
+  background: #EDDBB5;
+  border-radius: 10px;
+  height: 60px;
+  justify-content: space-around;
+  padding: 0 22px;
+
+  &__link {
+    font-family: 'Museo Cyrl 500', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #6F5D4C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 21px 13px;
+    transition: color .2s ease-out;
+    text-transform: uppercase;
+
+
+    &-active {
+      font-family: 'Museo Cyrl 900', sans-serif;
+      font-weight: bold;
+    }
+    &:hover {
+      color: #b58c66; // TODO: fix it
+    }
+  }
+}

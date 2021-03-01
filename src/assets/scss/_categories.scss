@@ -1,0 +1,46 @@
+.--svg-logo-beige {
+  fill: #EDDBB5;
+  //transition: fill .2s ease-out;
+}
+
+.app-categories {
+  background: #919D7F;
+
+  &__blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 108px;
+
+  }
+}
+.app-category {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  &:hover {
+    .app-category__title {
+      color: #EDDBB5;
+    }
+    //.--svg-logo-beige {
+    //  fill: #fff;
+    //}
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    display: flex;
+    font-family: 'Museo Cyrl 500', sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+    transition: color .2s ease-out;
+  }
+}

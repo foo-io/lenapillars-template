@@ -1,1 +1,483 @@
-body{background-color:#000;font-size:21px;color:#fff}
+@font-face {
+  font-family: 'Museo Cyrl 100';
+  src: url("/assets/fonts/MuseoCyrl-100.eot");
+  src: url("/assets/fonts/MuseoCyrl-100.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/MuseoCyrl-100.woff2") format("woff2"), url("/assets/fonts/MuseoCyrl-100.woff") format("woff"), url("/assets/fonts/MuseoCyrl-100.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Museo Cyrl 300';
+  src: url("/assets/fonts/MuseoCyrl-300Italic.eot");
+  src: url("/assets/fonts/MuseoCyrl-300Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/MuseoCyrl-300Italic.woff2") format("woff2"), url("/assets/fonts/MuseoCyrl-300Italic.woff") format("woff"), url("/assets/fonts/MuseoCyrl-300Italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Museo Cyrl 500';
+  src: url("/assets/fonts/MuseoCyrl-500Italic.eot");
+  src: url("/assets/fonts/MuseoCyrl-500Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/MuseoCyrl-500Italic.woff2") format("woff2"), url("/assets/fonts/MuseoCyrl-500Italic.woff") format("woff"), url("/assets/fonts/MuseoCyrl-500Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Museo Cyrl 300';
+  src: url("/assets/fonts/MuseoCyrl-300.eot");
+  src: url("/assets/fonts/MuseoCyrl-300.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/MuseoCyrl-300.woff2") format("woff2"), url("/assets/fonts/MuseoCyrl-300.woff") format("woff"), url("/assets/fonts/MuseoCyrl-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Museo Cyrl 500';
+  src: url("/assets/fonts/MuseoCyrl-500.eot");
+  src: url("/assets/fonts/MuseoCyrl-500.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/MuseoCyrl-500.woff2") format("woff2"), url("/assets/fonts/MuseoCyrl-500.woff") format("woff"), url("/assets/fonts/MuseoCyrl-500.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Museo Cyrl 100';
+  src: url("/assets/fonts/MuseoCyrl-100Italic.eot");
+  src: url("/assets/fonts/MuseoCyrl-100Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/MuseoCyrl-100Italic.woff2") format("woff2"), url("/assets/fonts/MuseoCyrl-100Italic.woff") format("woff"), url("/assets/fonts/MuseoCyrl-100Italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Museo Cyrl 700';
+  src: url("/assets/fonts/MuseoCyrl-700.eot");
+  src: url("/assets/fonts/MuseoCyrl-700.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/MuseoCyrl-700.woff2") format("woff2"), url("/assets/fonts/MuseoCyrl-700.woff") format("woff"), url("/assets/fonts/MuseoCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Museo Cyrl 900';
+  src: url("/assets/fonts/MuseoCyrl-900Italic.eot");
+  src: url("/assets/fonts/MuseoCyrl-900Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/MuseoCyrl-900Italic.woff2") format("woff2"), url("/assets/fonts/MuseoCyrl-900Italic.woff") format("woff"), url("/assets/fonts/MuseoCyrl-900Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Museo Cyrl 700';
+  src: url("/assets/fonts/MuseoCyrl-700Italic.eot");
+  src: url("/assets/fonts/MuseoCyrl-700Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/MuseoCyrl-700Italic.woff2") format("woff2"), url("/assets/fonts/MuseoCyrl-700Italic.woff") format("woff"), url("/assets/fonts/MuseoCyrl-700Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Museo Cyrl 900';
+  src: url("/assets/fonts/MuseoCyrl-900.eot");
+  src: url("/assets/fonts/MuseoCyrl-900.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/MuseoCyrl-900.woff2") format("woff2"), url("/assets/fonts/MuseoCyrl-900.woff") format("woff"), url("/assets/fonts/MuseoCyrl-900.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'MADE Barista';
+  src: url("/assets/fonts/MADEBarista.eot");
+  src: url("/assets/fonts/MADEBarista.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/MADEBarista.woff2") format("woff2"), url("/assets/fonts/MADEBarista.woff") format("woff"), url("/assets/fonts/MADEBarista.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+.svg-arrow-dims {
+  width: 14px;
+  height: 14px; }
+
+.svg-box-dims {
+  width: 30px;
+  height: 30px; }
+
+.svg-calendar-dims {
+  width: 14px;
+  height: 14px; }
+
+.svg-chat-dims {
+  width: 25px;
+  height: 25px; }
+
+.svg-check-all-dims {
+  width: 30px;
+  height: 30px; }
+
+.svg-document-dims {
+  width: 30px;
+  height: 30px; }
+
+.svg-gallery-dims {
+  width: 30px;
+  height: 30px; }
+
+.svg-journal-dims {
+  width: 30px;
+  height: 30px; }
+
+.svg-logo-dims {
+  width: 262px;
+  height: 60px; }
+
+.svg-loop-dims {
+  width: 16px;
+  height: 16px; }
+
+.svg-newspaper-dims {
+  width: 30px;
+  height: 30px; }
+
+.svg-qa-dims {
+  width: 30px;
+  height: 30px; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  color: #6F5D4C;
+  text-decoration: none; }
+
+body {
+  font-size: 16px;
+  font-family: 'Museo Cyrl 300', sans-serif;
+  background: #FFFBF2; }
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+.app-title {
+  font-family: 'MADE Barista', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 69px;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4B545E;
+  -webkit-text-stroke: 0.5px #4B545E; }
+  .app-title::after, .app-title::before {
+    content: '';
+    width: 12px;
+    height: 13px;
+    margin: 22px 10px 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='13' viewBox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.7 12.2C9.9 12 11.2 10.8 11.7 8.59997C12 7.29997 12 5.99997 11.9 4.59997C11.7 2.49997 10.8 1.09997 8.7 0.599973C8.4 0.499973 8.2 0.399973 7.9 0.299973C4.9 -0.900027 0.200001 2.09997 1.48406e-06 5.29997C-0.0999985 6.79997 1.8 10.6 3 11.5C4.3 12.4 5.7 12.7 7.2 12.2H7.7Z' fill='%234B545E'/%3E%3C/svg%3E%0A"); }
+
+.--svg-logo-white {
+  fill: #fff;
+  transition: fill .2s ease-out; }
+
+.app-header {
+  padding: 20px 0;
+  background: url(/assets/images/slider-main/image-1.png); }
+  .app-header__top {
+    display: flex;
+    justify-content: space-between; }
+  .app-header__section {
+    display: flex;
+    flex-direction: column; }
+  .app-header__logo {
+    display: flex; }
+    .app-header__logo-link {
+      display: flex; }
+      .app-header__logo-link:hover .--svg-logo-white {
+        fill: #EDDBB5; }
+  .app-header__information {
+    display: flex;
+    align-items: flex-end; }
+  .app-header__panel {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 38px; }
+    .app-header__panel-item {
+      display: flex; }
+  .app-header__messages {
+    display: flex; }
+    .app-header__messages:hover .--svg-logo-white {
+      fill: #EDDBB5; }
+  .app-header__search {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center; }
+    .app-header__search:hover .--svg-logo-white {
+      fill: #EDDBB5; }
+  .app-header__language {
+    display: flex;
+    font-family: 'Museo Cyrl 500', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    transition: color .2s ease-out; }
+    .app-header__language:hover {
+      color: #EDDBB5; }
+  .app-header__navigation {
+    margin-top: 20px; }
+
+.app-weather {
+  display: flex;
+  align-items: center; }
+  .app-weather__icon {
+    display: flex;
+    margin-right: 7px; }
+  .app-weather__temperature {
+    font-family: 'Museo Cyrl 500', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF; }
+
+.app-navigation {
+  display: flex;
+  background: #EDDBB5;
+  border-radius: 10px;
+  height: 60px;
+  justify-content: space-around;
+  padding: 0 22px; }
+  .app-navigation__link {
+    font-family: 'Museo Cyrl 500', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #6F5D4C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 21px 13px;
+    transition: color .2s ease-out;
+    text-transform: uppercase; }
+    .app-navigation__link-active {
+      font-family: 'Museo Cyrl 900', sans-serif;
+      font-weight: bold; }
+    .app-navigation__link:hover {
+      color: #b58c66; }
+
+.--svg-logo-beige {
+  fill: #EDDBB5; }
+
+.app-categories {
+  background: #919D7F; }
+  .app-categories__blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 108px; }
+
+.app-category {
+  display: flex;
+  flex-direction: column;
+  padding: 10px; }
+  .app-category:hover .app-category__title {
+    color: #EDDBB5; }
+  .app-category__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .app-category__title {
+    display: flex;
+    font-family: 'Museo Cyrl 500', sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+    transition: color .2s ease-out; }
+
+.app-groups {
+  margin-top: 80px; }
+  .app-groups__blocks {
+    display: flex;
+    justify-content: space-between; }
+
+.app-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  width: 100%; }
+  .app-group__image {
+    display: flex;
+    height: 205px; }
+    .app-group__image img {
+      width: 100%;
+      height: 100%; }
+  .app-group__title {
+    background: #4B545E;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    font-family: 'Museo Cyrl 500', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: color .2s ease-out; }
+    .app-group__title:hover {
+      color: #EDDBB5; }
+
+.app-visitor {
+  margin: 80px 0; }
+  .app-visitor__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px; }
+  .app-visitor__card {
+    background: #919D7F;
+    border-radius: 20px;
+    min-height: 200px;
+    max-width: 380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    position: relative; }
+    .app-visitor__card:hover .app-visitor__card-title {
+      color: #EDDBB5; }
+    .app-visitor__card-title {
+      font-family: 'Museo Cyrl 900', sans-serif;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      z-index: 1;
+      transition: color .2s ease-out; }
+    .app-visitor__card-description {
+      margin-top: 7px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: #FFFFFF;
+      z-index: 1; }
+    .app-visitor__card-image {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center; }
+
+.--visitor-card-green {
+  background: #919D7F; }
+
+.--visitor-card-beige {
+  background: #DCC0A1; }
+  .--visitor-card-beige:hover .app-visitor__card-title {
+    color: #919D7F; }
+  .--visitor-card-beige .app-visitor__card-title,
+  .--visitor-card-beige .app-visitor__card-description {
+    color: #6F5D4C; }
+
+.app-line {
+  background: url("/assets/images/line.svg");
+  display: flex;
+  height: 71px; }
+
+.app-news {
+  margin-top: 60px; }
+  .app-news__blocks {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 500px;
+    gap: 20px; }
+    .app-news__blocks-item {
+      display: flex;
+      flex: 1 1 calc((100% / 2) - 20px);
+      max-width: 580px;
+      width: 100%; }
+      .app-news__blocks-item:first-child {
+        height: 500px; }
+      .app-news__blocks-item:nth-child(2) {
+        height: 240px; }
+      .app-news__blocks-item:last-child {
+        height: 240px;
+        gap: 20px; }
+        .app-news__blocks-item:last-child > * {
+          width: 50%; }
+    .app-news__blocks-subitem {
+      display: flex; }
+  .app-news__card {
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden; }
+    .app-news__card:hover .app-news__card-image img {
+      transform: scale(1.02); }
+    .app-news__card:hover .app-news__card-title {
+      color: #EDDBB5; }
+    .app-news__card-image {
+      display: flex; }
+      .app-news__card-image img {
+        transition: transform .2s ease-out;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .app-news__card-content {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(30px);
+      border-radius: 0 20px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: calc( 100% - 40px);
+      height: 140px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-left: 0;
+      border-bottom: 0;
+      padding: 20px 30px 17px;
+      color: #FFF;
+      display: flex;
+      flex-direction: column; }
+    .app-news__card-title {
+      font-size: 16px;
+      line-height: 19px;
+      transition: color .2s ease-out;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical; }
+    .app-news__card-meta {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between; }
+    .app-news__card-calendar {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 17px; }
+      .app-news__card-calendar .svg-calendar-dims {
+        margin-right: 8px;
+        height: 17px; }
+    .app-news__card-more {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration-line: underline;
+      transition: color .2s ease-out; }
+      .app-news__card-more:hover {
+        color: #EDDBB5; }
+      .app-news__card-more span {
+        margin-right: 8px; }

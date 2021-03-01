@@ -16,7 +16,12 @@ const del = require("del");
 const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
+const svgSprite = require('gulp-svg-sprite');
+const cheerio = require('gulp-cheerio');
+const replace = require('gulp-replace');
+
 const browserSync = require("browser-sync").create();
+
 
 
 /* Paths */
@@ -29,21 +34,24 @@ const path = {
         js:     distPath + "assets/js/",
         css:    distPath + "assets/css/",
         images: distPath + "assets/images/",
-        fonts:  distPath + "assets/fonts/"
+        fonts:  distPath + "assets/fonts/",
+        icons:  distPath + "assets/icons/"
     },
     src: {
         html:   srcPath + "*.html",
         js:     srcPath + "assets/js/*.js",
         css:    srcPath + "assets/scss/*.scss",
         images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
-        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
+        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
+        icons:  srcPath + "assets/icons/**/*.svg"
     },
     watch: {
         html:   srcPath + "**/*.html",
         js:     srcPath + "assets/js/**/*.js",
         css:    srcPath + "assets/scss/**/*.scss",
         images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
-        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
+        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
+        icons:  srcPath + "assets/icons/**/*.svg"
     },
     clean: "./" + distPath
 }
@@ -239,7 +247,48 @@ function watchFiles() {
 const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
 const watch = gulp.parallel(build, watchFiles, serve);
 
-
+gulp.task('svgSprite', function () {
+    return gulp.src(path.src.icons)
+        .pipe(svgSprite({
+            mode: {
+                stack: {
+                    sprite: '../icons.svg', // название файла иконок
+                    example: true
+                }
+            }
+        }))
+        .pipe(dest(path.build.icons))
+})
+gulp.task('svgSprite', function () {
+    return gulp.src(path.src.icons)
+        .pipe(cheerio({
+            run: function ($) {
+                $('[fill]').removeAttr('fill');
+                $('[stroke]').removeAttr('stroke');
+                $('[style]').removeAttr('style');
+                $('[opacity]').removeAttr('opacity');
+            },
+            parserOptions: {xmlMode: true}
+        }))
+        .pipe(replace('&gt;', '>'))
+        .pipe(svgSprite({
+            mode: {
+                symbol: {
+                    sprite: '../sprite.svg', // название файла иконок
+                    example: true,
+                    // prefix: '.svg--%s',
+                    render: {
+                        scss: true
+                        // scss: {
+                        //     dest: "../../../scss/_sprite.scss",
+                        //     template: SOURCE_FOLDER + "scss/_sprite_template.scss"
+                        // }
+                    }
+                }
+            }
+        }))
+        .pipe(dest(path.build.icons))
+})
 
 /* Exports Tasks */
 exports.html = html;

@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <!-- Useful meta tags -->
@@ -12,14 +13,404 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>BrainsCloud | Home</title>
+    <title>Ленские столбы</title>
 </head>
 <body>
 
-    <header>header</header>
+    <header class="app-header">
+        <div class="app-container">
+            <div class="app-header__section">
+                <div class="app-header__top">
+    
+                    <div class="app-header__logo">
+                        <a href="/" title="На главную страницу" class="app-header__logo-link">
+                            <svg class="svg-logo-dims app-header__logo-svg --svg-logo-white">
+                                <use xlink:href="assets/icons/sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="app-header__information">
+                        <div class="app-header__panel">
+                            <div class="app-header__panel-item">
+                                <div class="app-header__weather">
+                                    <div class="app-weather">
+                                        <div class="app-weather__icon">
+                                            <img src="/assets/images/header/weather.png" alt="Snowing">
+                                        </div>
+                                        <div class="app-weather__temperature">
+                                            -46ºC
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-header__panel-item">
+                                <a href="#lang" class="app-header__language">
+                                    ENG
+                                </a>
+                            </div>
+                            <div class="app-header__panel-item">
+                                <a href="#search" class="app-header__search">
+                                    <svg class="svg-loop-dims --svg-logo-white">
+                                        <use xlink:href="assets/icons/sprite.svg#loop"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="app-header__panel-item">
+                                <a href="#chat" class="app-header__messages">
+                                    <svg class="svg-chat-dims --svg-logo-white">
+                                        <use xlink:href="assets/icons/sprite.svg#chat"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="app-header__navigation">
+                    <nav class="app-navigation">
+                        <a href="#" class="app-navigation__link app-navigation__link-active">О нас</a>
+                        <a href="#" class="app-navigation__link">Пресс-центр</a>
+                        <a href="#" class="app-navigation__link">Развивать</a>
+                        <a href="#" class="app-navigation__link">Просвещать</a>
+                        <a href="#" class="app-navigation__link">Помогать</a>
+                        <a href="#" class="app-navigation__link">Исследовать</a>
+                        <a href="#" class="app-navigation__link">Сохранять</a>
+                        <a href="#" class="app-navigation__link">Путешествуй</a>
+                        <a href="#" class="app-navigation__link">Документы</a>
+                        <a href="#" class="app-navigation__link">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    
+    </header>
 
     
-    Hello!
+    <main>
+        <div class="app-categories">
+            <div class="app-container">
+        
+                <nav class="app-categories__blocks">
+                    <a href="#" class="app-category">
+                        <div class="app-category__icon">
+                            <svg class="svg-gallery-dims --svg-logo-beige">
+                                <use xlink:href="assets/icons/sprite.svg#gallery"></use>
+                            </svg>
+                        </div>
+                        <div class="app-category__title">
+                            Фотоальбомы
+                        </div>
+                    </a>
+                    <a href="#" class="app-category">
+                        <div class="app-category__icon">
+                            <svg class="svg-journal-dims --svg-logo-beige">
+                                <use xlink:href="assets/icons/sprite.svg#journal"></use>
+                            </svg>
+                        </div>
+                        <div class="app-category__title">
+                            Книга отзывов
+                        </div>
+                    </a>
+                    <a href="#" class="app-category">
+                        <div class="app-category__icon">
+                            <svg class="svg-newspaper-dims --svg-logo-beige">
+                                <use xlink:href="assets/icons/sprite.svg#newspaper"></use>
+                            </svg>
+                        </div>
+                        <div class="app-category__title">
+                            Доска объявлений
+                        </div>
+                    </a>
+                    <a href="#" class="app-category">
+                        <div class="app-category__icon">
+                            <svg class="svg-qa-dims --svg-logo-beige">
+                                <use xlink:href="assets/icons/sprite.svg#qa"></use>
+                            </svg>
+                        </div>
+                        <div class="app-category__title">
+                            Вопрос-ответ
+                        </div>
+                    </a>
+                    <a href="#" class="app-category">
+                        <div class="app-category__icon">
+                            <svg class="svg-check-all-dims --svg-logo-beige">
+                                <use xlink:href="assets/icons/sprite.svg#check-all"></use>
+                            </svg>
+                        </div>
+                        <div class="app-category__title">
+                            Голосования и опросы
+                        </div>
+                    </a>
+                    <a href="#" class="app-category">
+                        <div class="app-category__icon">
+                            <svg class="svg-document-dims --svg-logo-beige">
+                                <use xlink:href="assets/icons/sprite.svg#document"></use>
+                            </svg>
+                        </div>
+                        <div class="app-category__title">
+                            Публикации
+                        </div>
+                    </a>
+                    <a href="#" class="app-category">
+                        <div class="app-category__icon">
+                            <svg class="svg-box-dims --svg-logo-beige">
+                                <use xlink:href="assets/icons/sprite.svg#box"></use>
+                            </svg>
+                        </div>
+                        <div class="app-category__title">
+                            Купить билеты
+                        </div>
+                    </a>
+                </nav>
+        
+            </div>
+        </div>
+    
+        <div class="app-groups">
+            <div class="app-container">
+                <div class="app-groups__blocks">
+                    <div class="app-group">
+                        <div class="app-group__image">
+                            <img src="/assets/images/groups/children.svg" alt="Children">
+                        </div>
+                        <a href="#" class="app-group__title">Детям</a>
+                    </div>
+                    <div class="app-group">
+                        <div class="app-group__image">
+                            <img src="/assets/images/groups/family.svg" alt="Family">
+                        </div>
+                        <a href="#" class="app-group__title">Семьям</a>
+                    </div>
+                    <div class="app-group">
+                        <div class="app-group__image">
+                            <img src="/assets/images/groups/adults.svg" alt="Adults">
+                        </div>
+                        <a href="#" class="app-group__title">Взрослым</a>
+                    </div>
+                    <div class="app-group">
+                        <div class="app-group__image">
+                            <img src="/assets/images/groups/groups.svg" alt="Groups">
+                        </div>
+                        <a href="#" class="app-group__title">Группам</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="app-visitor">
+            <div class="app-container">
+                <h3 class="app-title">Посетителю</h3>
+                <div class="app-visitor__blocks">
+                    <a href="#" class="app-visitor__card --visitor-card-green">
+                        <div class="app-visitor__card-title">
+                            Маршруты и карты
+                        </div>
+                        <div class="app-visitor__card-description">
+                            Все тропы и маршруты<br>«Национального парка Ленские столбы»
+                        </div>
+                        <div class="app-visitor__card-image">
+                            <img src="/assets/images/visitor/location.svg" alt="Location">
+                        </div>
+                    </a>
+                    <a href="#" class="app-visitor__card --visitor-card-green">
+                        <div class="app-visitor__card-title">
+                            Размещение
+                        </div>
+                        <div class="app-visitor__card-description">
+                            Турприюты и гостевые дома «Национального<br>парка Ленские столбы»
+                        </div>
+                        <div class="app-visitor__card-image">
+                            <img src="/assets/images/visitor/house.svg" alt="House">
+                        </div>
+                    </a>
+                    <a href="#" class="app-visitor__card --visitor-card-green">
+                        <div class="app-visitor__card-title">
+                            Правила размещения
+                        </div>
+                        <div class="app-visitor__card-description">
+                            Как нужно себя вести на особо охраняемых природных территориях, подведомственных «Национального парка Ленские столбы»
+                        </div>
+                        <div class="app-visitor__card-image">
+                            <img src="/assets/images/visitor/rules.svg" alt="Rules">
+                        </div>
+                    </a>
+                    <a href="#" class="app-visitor__card --visitor-card-beige">
+                        <div class="app-visitor__card-title">
+                            Вопрос-ответ
+                        </div>
+                        <div class="app-visitor__card-description">
+                            Ответы на самые часто задаваемые вопросы<br>наших гостей
+                        </div>
+                        <div class="app-visitor__card-image">
+                            <img src="/assets/images/visitor/qa.svg" alt="QA">
+                        </div>
+                    </a>
+                    <a href="#" class="app-visitor__card --visitor-card-beige">
+                        <div class="app-visitor__card-title">
+                            Объявления
+                        </div>
+                        <div class="app-visitor__card-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, psum dolor sit amet, consectetur adipiscing elit
+                        </div>
+                        <div class="app-visitor__card-image">
+                            <img src="/assets/images/visitor/announcement.svg" alt="Announcement">
+                        </div>
+                    </a>
+                    <a href="#" class="app-visitor__card --visitor-card-beige">
+                        <div class="app-visitor__card-title">
+                            Голосования и опросы
+                        </div>
+                        <div class="app-visitor__card-description">
+                            Как нужно себя вести на особо охраняемых природных территориях, подведомственных «Национального парка Ленские столбы»
+                        </div>
+                        <div class="app-visitor__card-image">
+                            <img src="/assets/images/visitor/check.svg" alt="Check">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="app-line"></div>
+    
+        <div class="app-news">
+            <div class="app-container">
+                <h3 class="app-title">Новости</h3>
+                <div class="app-news__blocks">
+        <!--            <a href="#" class="app-news__card">-->
+        <!--                <div class="app-news__card-image">-->
+        <!--                    <img src="/assets/images/news/image-1.png" alt="Image 1">-->
+        <!--                </div>-->
+        <!--                <div class="app-news__card-content">-->
+        <!--                    <div class="app-news__card-title">-->
+        <!--                        Что может быть приятней в выходной день, чем поездка-->
+        <!--                        на Ленские столбы в дружной и весёлой компании-->
+        <!--                    </div>-->
+        <!--                    <div class="app-news__card-meta">-->
+        <!--                        <div class="app-news__card-calendar">-->
+        <!--                            <svg class="svg-calendar-dims &#45;&#45;svg-logo-white">-->
+        <!--                                <use xlink:href="assets/icons/sprite.svg#calendar"></use>-->
+        <!--                            </svg>-->
+        <!--                            <span>27 апреля 2020</span>-->
+        <!--                        </div>-->
+        <!--                        <div class="app-news__card-more">-->
+        <!--                            <span>Подробнее</span>-->
+        <!--                            <img src="/assets/images/more.svg" alt="More">-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </a>-->
+                    <div class="app-news__blocks-item">
+                        <a href="#" class="app-news__card">
+                            <div class="app-news__card-image">
+                                <img src="/assets/images/news/image-1.png" alt="Image 1">
+                            </div>
+                            <div class="app-news__card-content">
+                                <div class="app-news__card-title">
+                                    Что может быть приятней в выходной день, чем поездка
+                                    на Ленские столбы в дружной и весёлой компании
+                                </div>
+                                <div class="app-news__card-meta">
+                                    <div class="app-news__card-calendar">
+                                        <svg class="svg-calendar-dims --svg-logo-white">
+                                            <use xlink:href="assets/icons/sprite.svg#calendar"></use>
+                                        </svg>
+                                        <span>27 апреля 2020</span>
+                                    </div>
+                                    <div class="app-news__card-more">
+                                        <span>Подробнее</span>
+                                        <img src="/assets/images/more.svg" alt="More">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="app-news__blocks-item">
+                        <a href="#" class="app-news__card">
+                            <div class="app-news__card-image">
+                                <img src="/assets/images/news/image-2.png" alt="Image 2">
+                            </div>
+                            <div class="app-news__card-content">
+                                <div class="app-news__card-title">
+                                    Что может быть приятней в выходной день, чем поездка
+                                    на Ленские столбы в дружной и весёлой компании
+                                </div>
+                                <div class="app-news__card-meta">
+                                    <div class="app-news__card-calendar">
+                                        <svg class="svg-calendar-dims --svg-logo-white">
+                                            <use xlink:href="assets/icons/sprite.svg#calendar"></use>
+                                        </svg>
+                                        <span>27 апреля 2020</span>
+                                    </div>
+                                    <div class="app-news__card-more">
+                                        <span>Подробнее</span>
+                                        <img src="/assets/images/more.svg" alt="More">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="app-news__blocks-item">
+                        <div class="app-news__blocks-subitem">
+                            <a href="#" class="app-news__card">
+                                <div class="app-news__card-image">
+                                    <img src="/assets/images/news/image-3.png" alt="Image 3">
+                                </div>
+                                <div class="app-news__card-content">
+                                    <div class="app-news__card-title">
+                                        Что может быть приятней в выходной день, чем поездка
+                                        на Ленские столбы в дружной и весёлой компании
+                                    </div>
+                                    <div class="app-news__card-meta">
+                                        <div class="app-news__card-calendar">
+                                            <svg class="svg-calendar-dims --svg-logo-white">
+                                                <use xlink:href="assets/icons/sprite.svg#calendar"></use>
+                                            </svg>
+                                            <span>27 апреля 2020</span>
+                                        </div>
+                                        <div class="app-news__card-more">
+                                            <img src="/assets/images/more.svg" alt="More">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="app-news__blocks-subitem">
+                            <a href="#" class="app-news__card">
+                                <div class="app-news__card-image">
+                                    <img src="/assets/images/news/image-4.png" alt="Image 4">
+                                </div>
+                                <div class="app-news__card-content">
+                                    <div class="app-news__card-title">
+                                        Что может быть приятней в выходной день, чем поездка
+                                        на Ленские столбы в дружной и весёлой компании
+                                    </div>
+                                    <div class="app-news__card-meta">
+                                        <div class="app-news__card-calendar">
+                                            <svg class="svg-calendar-dims --svg-logo-white">
+                                                <use xlink:href="assets/icons/sprite.svg#calendar"></use>
+                                            </svg>
+                                            <span>27 апреля 2020</span>
+                                        </div>
+                                        <div class="app-news__card-more">
+                                            <img src="/assets/images/more.svg" alt="More">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    
+        <div>
+            hello world!
+        </div>
+    
+    </main>
     
 
     <footer>Footer</footer>
